@@ -1,0 +1,30 @@
+---
+const mobileName = "< A S >"
+---
+<header>
+    <div id="name-block">
+        <h1 id="desktop-name">Anthony Scott</h1>
+        <h1 id= "mobile-name"> {mobileName} </h1>
+    </div>
+    <div id="theme-toggle-block"></div>
+</header>
+
+<style>
+    #name-block {
+        display: flex;
+    }
+
+    #mobile-name {
+        display: none;
+    }
+
+    @media screen and (max-width: 750px){
+        #mobile-name {
+            display: block;
+        }
+
+        #desktop-name {
+            display: none;
+        }
+    }
+</style>
