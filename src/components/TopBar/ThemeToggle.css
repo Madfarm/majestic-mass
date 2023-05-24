@@ -4,3 +4,7 @@ path {
 body.dark path {
     fill: white;
 }
+
+#themebtn {
+    border-radius: 10%;
+}

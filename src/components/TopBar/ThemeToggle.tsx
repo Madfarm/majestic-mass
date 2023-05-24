@@ -26,15 +26,13 @@ export default function ThemeToggle() {
         setIsMounted(true);
     }, []);
 
-    if(!isMounted){
+    if (!isMounted) {
         return null;
     }
 
     return (
-        <div>
-            <button onClick={toggleTheme}>
-                {theme === "light" ? "🌙" : "🌞"}
-            </button>
-        </div>
+        <button id="themebtn" onClick={toggleTheme}>
+            {theme === "light" ? "🌙" : "🌞"}
+        </button>
     )
 }
