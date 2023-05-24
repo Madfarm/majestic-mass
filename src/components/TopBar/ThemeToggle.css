@@ -1,0 +1,6 @@
+path {
+    fill: black;
+}
+body.dark path {
+    fill: white;
+}

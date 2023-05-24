@@ -1,16 +1,19 @@
 ---
 const mobileName = "< A S >"
+import ThemeToggle from './ThemeToggle'
 ---
 <header>
     <div id="name-block">
         <h1 id="desktop-name">Anthony Scott</h1>
         <h1 id= "mobile-name"> {mobileName} </h1>
     </div>
-    <div id="theme-toggle-block"></div>
+    <div id="theme-toggle-block">
+        <ThemeToggle client:load />
+    </div>
 </header>
 
 <style>
-    #name-block {
+    header {
         display: flex;
     }
 
