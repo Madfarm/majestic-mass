@@ -44,3 +44,19 @@ body.dark path {
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
+
+@media screen and (max-width: 600px) {
+    #theme-label {
+        width: 20vw;
+        height: 8vw;
+    }
+    #theme-label:after {
+        width: 7.2vw;
+        height: 7.2vw;
+    }
+
+    #themebtn:checked + label:after {
+        left: 19.6vw;
+    }
+
+}
