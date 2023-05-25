@@ -31,8 +31,10 @@ export default function ThemeToggle() {
     }
 
     return (
-        <button id="themebtn" onClick={toggleTheme}>
-            {theme === "light" ? "🌙" : "🌞"}
-        </button>
+        <>
+        <input type="checkbox" id="themebtn" onClick={toggleTheme} />
+        <label id="theme-label"htmlFor="themebtn"></label>
+        </>
+
     )
 }
