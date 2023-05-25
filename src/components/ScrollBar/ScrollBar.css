@@ -1,0 +1,4 @@
+.list-container {
+    list-style-type: none;
+    border-left: 2px solid black;
+}
