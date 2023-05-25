@@ -86,4 +86,18 @@ input:checked + label svg.moon {
         left: 19.6vw;
     }
 
+    #theme-label svg {
+        width: 6vw;
+        height: 6vw;
+        top: 0.5vh;
+        z-index: 50;
+    }
+    #theme-label svg.sun {
+        left: 0.5vh;
+    }
+    
+    #theme-label svg.moon {
+        left: 13vw;
+    }
+
 }
