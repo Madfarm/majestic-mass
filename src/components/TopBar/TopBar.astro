@@ -1,11 +1,13 @@
 ---
-const mobileName: string = "< A S >"
+const front = '< ';
+const end = ' >';
+const mobileName: string = `A S`
 import ThemeToggle from './ThemeToggle'
 ---
 <header>
     <div id="name-block">
-        <h1 id="desktop-name">Anthony Scott</h1>
-        <h1 id= "mobile-name"> {mobileName} </h1>
+        <h1 id="desktop-name">Anthony<span class="logo-color"> Scott</span></h1>
+        <h1 id= "mobile-name">{front}<span class="logo-color">{mobileName}</span>{end}</h1>
     </div>
     <div id="theme-toggle-block">
         <ThemeToggle client:load />
@@ -39,6 +41,10 @@ import ThemeToggle from './ThemeToggle'
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .logo-color {
+        color: var(--logo-color);
     }
 
     #mobile-name {
