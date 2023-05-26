@@ -6,12 +6,12 @@ export default function ScrollBar() {
         <ul className='list-container'>
             <Link activeClass="active" smooth spy to="about">
                 <li>
-                    ABOUT
+                    About
                 </li>
             </Link>
             <Link activeClass="active" smooth spy to="projects">
                 <li>
-                    PROJECTS
+                    Projects
                 </li>
             </Link>
             <Link activeClass="active" smooth spy to="portfolios">
@@ -23,12 +23,12 @@ export default function ScrollBar() {
             </Link>
             <Link activeClass="active" smooth spy to="skills">
                 <li>
-                    SKILLS
+                    Skills
                 </li>
             </Link>
             <Link activeClass="active" smooth spy to="contact">
                 <li>
-                    CONTACT ME
+                    Contact Me
                 </li>
             </Link>
         </ul>

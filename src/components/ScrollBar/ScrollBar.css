@@ -1,9 +1,12 @@
 .list-container {
     list-style-type: none;
     border-left: 2px solid var(--border-color);
-    padding-left: 1vw;
+    padding-left: 0;
     width: 100%;
     margin: 0;
+
+    font-size: 0.9em;
+    height: auto;
     
 }
 
@@ -13,6 +16,13 @@
     width: 18vw;
     cursor: pointer;
     transition: opacity 200ms ease;
+    padding: 0.4vw;
+    padding-left: 1vw;
+}
+
+
+.list-container > a > ul {
+    list-style-type: none;
 }
 
 
@@ -27,5 +37,6 @@
 
 .active {
     background-color: var(--nav-bg);
+    box-shadow: inset 0px 5px 15px var(--nav-bg), inset 0px -5px 15px rgba(255,255,255,0.4);
     opacity: 1 !important;
 }
