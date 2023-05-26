@@ -23,8 +23,9 @@ const { title } = Astro.props;
 <style is:global>
 	:root {
 		box-sizing: border-box;
+		--border-color: black;
 	}
-	html, body {
+	html {
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
 		margin: 0;
@@ -32,8 +33,16 @@ const { title } = Astro.props;
 		height: 100%;
 	}
 
+	body{
+		display: flex;
+		justify-content: center;
+
+		margin: 0;
+		padding: 0;
+	}
 	.dark {
 		background-color: #2e2336 ;
 		color: white;
+		--border-color: white;
 	}
 </style>

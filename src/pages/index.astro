@@ -8,11 +8,26 @@ import ScrollSideBar from '../components/ScrollBar/ScrollBar.astro'
 	<TopBar />
 
 	<main>
-
+		<section id="about">about</section>
+		<section id="projects">projects</section>
+		<section id="portfolios">portfolios</section>
+		<section id="skills">skills</section>
+		<section id="contact">contact</section>
 	</main>
 
 	<ScrollSideBar />
 </Layout>
 
 <style>
+	main {
+		width: 40vw;
+
+		padding-top: 30vh;
+	}
+
+	section {
+		height: 500px;
+		display: flex;
+		align-items: center;
+	}
 </style>

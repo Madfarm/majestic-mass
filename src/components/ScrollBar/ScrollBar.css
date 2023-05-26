@@ -1,4 +1,9 @@
 .list-container {
     list-style-type: none;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--border-color);
+    padding-left: 1vw;
+}
+
+.list-container > li {
+    cursor: pointer;
 }
