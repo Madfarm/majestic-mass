@@ -19,12 +19,14 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 	</body>
+	
 </html>
 <style is:global>
 	:root {
 		box-sizing: border-box;
-		--border-color: black;
-		--nav-bg: rgba(216, 134, 11, 0.4);
+		--border-color: rgba(216, 134, 11, 0.2);
+		--nav-bg: rgba(255, 204, 137, 0.4);
+		--border-hover: rgba(32, 25, 99);
 	}
 	html {
 		font-family: system-ui, sans-serif;
