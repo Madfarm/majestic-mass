@@ -4,31 +4,33 @@ import { Link } from 'react-scroll';
 export default function ScrollBar() {
     return (
         <ul className='list-container'>
-            <li>
-                <Link activeClass="active" smooth spy to="about">
+            <Link activeClass="active" smooth spy to="about">
+                <li>
                     ABOUT
-                </Link>
-            </li>
-            <li>
-                <Link activeClass="active" smooth spy to="projects">
+                </li>
+            </Link>
+            <Link activeClass="active" smooth spy to="projects">
+                <li>
                     PROJECTS
-                </Link>
+                </li>
+            </Link>
+            <Link activeClass="active" smooth spy to="portfolios">
                 <ul>
                     <li>
-                        <Link activeClass="active" smooth spy to="portfolios"> Past Portfolios</Link>
+                        Past Portfolios
                     </li>
                 </ul>
-            </li>
-            <li>
-                <Link activeClass="active" smooth spy to="skills">
+            </Link>
+            <Link activeClass="active" smooth spy to="skills">
+                <li>
                     SKILLS
-                </Link>
-            </li>
-            <li>
-                <Link activeClass="active" smooth spy to="contact">
+                </li>
+            </Link>
+            <Link activeClass="active" smooth spy to="contact">
+                <li>
                     CONTACT ME
-                </Link>
-            </li>
+                </li>
+            </Link>
         </ul>
     )
 }
