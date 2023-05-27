@@ -36,13 +36,13 @@ body.dark path {
     visibility: hidden;
 }
 #themebtn:checked + label {
-    background: #242424;
+    background: #211f23;
 }
 
 #themebtn:checked + label:after {
     left:9.8vw;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #777, #3a3a3a);
+    background: linear-gradient(180deg, #777, #211f23);
 }
 
 #theme-label svg {
