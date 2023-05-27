@@ -1,17 +1,27 @@
 ---
-const front = '< ';
-const end = ' >';
-const mobileName: string = `A S`
-import ThemeToggle from './ThemeToggle'
+const front = "< ";
+const end = " >";
+const mobileName: string = `A S`;
+import ThemeToggle from "./ThemeToggle";
 ---
+
 <header>
-    <div id="name-block">
-        <h1 id="desktop-name">Anthony<span class="logo-color"> Scott</span></h1>
-        <h1 id= "mobile-name">{front}<span class="logo-color">{mobileName}</span>{end}</h1>
+    <div id="top-line">
+        <div id="name-block">
+            <h1 id="desktop-name">
+                Anthony<span class="logo-color"> Scott</span>
+            </h1>
+            <h1 id="mobile-name">
+                {front}<span class="logo-color">{mobileName}</span>{end}
+            </h1>
+        </div>
+        <div id="theme-toggle-block">
+            <ThemeToggle client:load />
+        </div>
     </div>
-    <div id="theme-toggle-block">
-        <ThemeToggle client:load />
-    </div>
+    <nav id="mobile-nav">
+        <!-- To become a react component -->
+    </nav>
 </header>
 
 <style>
@@ -22,7 +32,8 @@ import ThemeToggle from './ThemeToggle'
         right: 0;
 
         display: flex;
-        align-items: center;
+        flex-direction: column;
+    
         padding-left: 3vw;
         padding-right: 3vw;
 
@@ -30,14 +41,18 @@ import ThemeToggle from './ThemeToggle'
 
         z-index: 10;
     }
-    
+    #top-line {
+        display: flex;
+        align-items: center;
+    }
+
     #name-block {
-        flex-basis: calc(100%*5/6);
+        flex-basis: calc(100% * 5 / 6);
     }
 
     #theme-toggle-block {
-        flex-basis: calc(100%*1/6);
-        
+        flex-basis: calc(100% * 1 / 6);
+
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -51,7 +66,11 @@ import ThemeToggle from './ThemeToggle'
         display: none;
     }
 
-    @media screen and (max-width: 750px){
+    #mobile-nav {
+        display: none;
+    }
+
+    @media screen and (max-width: 750px) {
         #mobile-name {
             display: block;
         }
@@ -59,5 +78,10 @@ import ThemeToggle from './ThemeToggle'
         #desktop-name {
             display: none;
         }
+
+        #mobile-nav {
+            display: flex;
+        }
     }
+
 </style>
