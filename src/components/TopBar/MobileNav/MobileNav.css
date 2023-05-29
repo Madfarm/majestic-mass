@@ -1,6 +1,18 @@
 #mobileNav {
     border: 1px solid var(--logo-color);
-    width: 40vw;
+    width: 120px;
     border-radius: 3vw;
-    height: 7vh;
+    height: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vw;
+    padding: 1vw;
 }
+
+#mobileNav > h2 {
+    margin: 0;
+    font-size: 22px;
+}
+

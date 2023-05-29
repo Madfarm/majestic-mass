@@ -54,7 +54,7 @@ body.dark path {
 }
 #theme-label svg.sun {
     left: 0.5vh;
-    fill: #fff;
+    fill: #ffffff;
     transition: 0.3s;
 }
 
