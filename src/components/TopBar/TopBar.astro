@@ -2,7 +2,9 @@
 const front = "< ";
 const end = " >";
 const mobileName: string = `A S`;
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ThemeToggle/ThemeToggle";
+import MobileNav from './MobileNav/MobileNav';
+import Breadcrumb from './Breadcrumb/Breadcrumb'
 ---
 
 <header>
@@ -19,8 +21,9 @@ import ThemeToggle from "./ThemeToggle";
             <ThemeToggle client:load />
         </div>
     </div>
-    <nav id="mobile-nav">
-        <!-- To become a react component -->
+    <nav>
+        <MobileNav client:visible />
+        <Breadcrumb client:visible />
     </nav>
 </header>
 
@@ -66,7 +69,7 @@ import ThemeToggle from "./ThemeToggle";
         display: none;
     }
 
-    #mobile-nav {
+    nav {
         display: none;
     }
 
@@ -79,8 +82,10 @@ import ThemeToggle from "./ThemeToggle";
             display: none;
         }
 
-        #mobile-nav {
+        nav {
             display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
     }
 

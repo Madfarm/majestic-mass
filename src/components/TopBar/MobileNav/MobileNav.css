@@ -1,0 +1,6 @@
+#mobileNav {
+    border: 1px solid var(--logo-color);
+    width: 40vw;
+    border-radius: 3vw;
+    height: 7vh;
+}
