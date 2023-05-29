@@ -1,0 +1,7 @@
+.breadcrumb {
+    display: none;
+}
+
+.activeBreadcrumb {
+    display: block;
+}
