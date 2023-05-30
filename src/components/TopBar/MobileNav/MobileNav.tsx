@@ -17,15 +17,15 @@ export default function MobileNav() {
             </svg>
             {menuVisible && (
                 <div id="dropdownMenu">
-                <ul>
-                    <li><Link className='dropdownLink' activeClass='active' smooth spy to='about'>About</Link></li>
-                    <li>Projects
-                        <ul>
-                            <li> Past Portfolios</li>
+                <ul className='list'>
+                    <li><Link onClick={toggleMenu} className='dropdownLink' activeClass='active' smooth spy to='about'>About</Link></li>
+                    <li><Link onClick={toggleMenu} className='dropdownLink' activeClass='active' smooth spy to='projects'>Projects</Link>
+                        <ul style={{listStyleType: 'none', paddingLeft: '10px', width: '100%'}}>
+                            <li><Link onClick={toggleMenu} className='dropdownLink' activeClass='active' smooth spy to='portfolios'>Past Portfolios</Link></li>
                         </ul>
                     </li>
-                    <li>Skills</li>
-                    <li>Contact Me</li>
+                    <li><Link onClick={toggleMenu} className='dropdownLink' activeClass='active' smooth spy to='skills'>Skills</Link></li>
+                    <li><Link onClick={toggleMenu} className='dropdownLink' activeClass='active' smooth spy to='contact'>Contact Me</Link></li>
                 </ul>
             </div>
             ) }
