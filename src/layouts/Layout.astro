@@ -24,7 +24,7 @@ const { title } = Astro.props;
 <style is:global>
 	:root {
 		box-sizing: border-box;
-
+		--bg-color: #f6f6f6;
 		--logo-color: rgba(216,134,11);
 		
 
@@ -34,16 +34,16 @@ const { title } = Astro.props;
 		--border-hover: rgba(6,31,51);
 	}
 	.dark {
-		background-color: #061f33;
 		/* background-color: #2e2336; */
 		color: white;
 		/* --logo-color: rgba(216,134,11); */
-
+		--bg-color: #061f33;
 		
-
+		
 		--border-color: white;
 		--nav-bg: rgba(31,33,35,0.4);
 		--border-hover: rgba(48, 54, 51);
+
 	}
 
 
@@ -62,6 +62,6 @@ const { title } = Astro.props;
 		margin: 0;
 		padding: 0;
 
-		background-color: #F6F6F6;
+		background-color: var(--bg-color);
 	}
 </style>

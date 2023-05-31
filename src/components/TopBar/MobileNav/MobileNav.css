@@ -24,7 +24,9 @@
     width: 80vw;
     position: absolute;
     left: 0;
-    top: 20vh;
+    top: 17.5vh;
+
+    background-color: var(--bg-color);
 
     border: 1px solid var(--logo-color);
     border-radius: 3vw;
@@ -32,6 +34,8 @@
     padding: 0;
 
     overflow: hidden;
+
+    z-index: 12;
 }
 
 .list > li {
