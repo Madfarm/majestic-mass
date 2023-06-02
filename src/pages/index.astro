@@ -1,41 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TopBar from '../components/TopBar/TopBar.astro';
-import ScrollSideBar from '../components/ScrollBar/ScrollBar.astro'
+import ScrollSideBar from '../components/ScrollBar/ScrollBar.astro';
+import MainColumn from '../components/MainColumn/MainColumn.astro'
 ---
 
 <Layout title="Anthony Scott">
 	<TopBar />
 
-	<main>
-		<section id="about">about</section>
-		<section id="projects">projects</section>
-		<section id="portfolios">portfolios</section>
-		<section id="skills">skills</section>
-		<section id="contact">contact</section>
-	</main>
+	<MainColumn />
 
 	<ScrollSideBar />
 </Layout>
 
-<style>
-	main {
-		width: 40vw;
-	}
 
-	section {
-		height: 500px;
-		display: flex;
-		align-items: center;
-		
-
-		/* For Testing */
-		border: 1px solid var(--border-hover);
-	}
-
-	@media screen and (max-width: 600px){
-		main {
-			width: 100%;
-		}
-	}
-</style>

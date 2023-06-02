@@ -1,0 +1,53 @@
+---
+---
+
+<header>
+    <h2 class="mobile">Anthony Scott</h2>
+    <h3>Full-Stack Developer</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore at distinctio, assumenda quasi, nesciunt placeat voluptate repellat enim rerum accusantium animi culpa nisi officiis sequi laboriosam maiores ut reprehenderit?</p>
+</header>
+
+
+<style>
+    header {
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+
+        /* border: 1px solid red; */
+    }
+
+    h3 {
+        color: var(--logo-color);
+        font-size: 36px;
+    }
+
+    p {
+        max-width: 80%;
+        font-size: 22px;
+    }
+
+    .mobile {
+		display: none
+	}
+
+    @media screen and (max-width: 600px){
+		.mobile {
+			display: block;
+		}
+        h3 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+	}
+
+
+</style>
