@@ -1,12 +1,15 @@
 ---
 import About from './About.astro'
+import Projects from './ProjectsSection/ProjectsSection.astro'
 ---
 
 <main>
     <article id="about"> 
         <About />
     </article>
-    <article id="projects">projects</article>
+    <article id="projects">
+        <Projects />
+    </article>
     <article id="portfolios">portfolios</article>
     <article id="skills">skills</article>
     <article id="contact">contact</article>
@@ -25,8 +28,10 @@ import About from './About.astro'
         height: 82vh;
         
         padding-top: 20vh;
+
+        
 		/* For Testing */
-		/* border: 1px solid var(--border-hover); */
+		border: 1px solid var(--border-hover);
 	}
     
 
