@@ -5,7 +5,7 @@ import { Image } from 'astro:assets';
 
 <aside>
     <div id="photo">
-        <Image src="/IMG_9807.jpg" alt="Portrait of me"  height={450} width={800} />
+        <img src="/IMG_9807.jpg" alt="Portrait of me" />
     </div>
 </aside>
 
@@ -28,10 +28,13 @@ import { Image } from 'astro:assets';
 
     img {
         max-height: 50vh;
-        max-width: 15vw;
+        width: 15vw;
+
+        height: auto;
+        width: auto; 
     }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 1000px){
         aside {
             display: none;
         }
