@@ -1,7 +1,7 @@
-path {
+.theme-path {
     fill: black;
 }
-body.dark path {
+body.dark .theme-path {
     fill: white;
 }
 
