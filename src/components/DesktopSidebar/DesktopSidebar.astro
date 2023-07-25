@@ -7,6 +7,12 @@
     <div id="photo">
         <img src="/IMG_9807.jpg" alt="Portrait of me" />
     </div>
+
+    <div id="link-container-desktop">
+        <div class="socials"></div>
+        <div class="socials"></div>
+        <div class="socials"></div>
+    </div>
 </aside>
 
 
@@ -34,9 +40,24 @@
         width: auto; 
     }
 
+    #link-container-desktop {
+        width: 20vw;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        
+
+        border: 1px solid red;
+    }
+
+    .socials {
+        border: 1px solid blue;
+    }
+
     @media screen and (max-width: 1000px){
         aside {
             display: none;
         }
-}
+    }
 </style>
