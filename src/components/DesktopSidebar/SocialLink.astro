@@ -1,33 +1,47 @@
 ---
-const { name, text } = Astro.props;
-import { Icon } from 'astro-icon';
+const { name, text, link } = Astro.props;
+import { Icon } from "astro-icon";
 ---
 
-
-<div>
-    <Icon name={name} height="100%" width="50px" style="color: #fff" />
-    <p><strong>{text}</strong></p>
-</div>
-
+<section>
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <div>
+      <Icon name={name} height="100%" width="50px" style="color: #fff" />
+      <p><strong>{text}</strong></p>
+    </div>
+  </a>
+</section>
 
 <style>
-    div {
-        opacity: 0.9;
-        background-color: var(--socials-color);
-        border: 3px solid var(--socials-color);
-        height: 25%;
+  section {
+    height: 25%;
+  }
 
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: .25vh;
-        gap: 2vw;
+  a {
+    text-decoration: none;
+  }
 
-        color: white;
-    }
+  div {
+    opacity: 0.9;
+    background-color: var(--socials-color);
+    border: 3px solid var(--socials-color);
+    height: 100%;
 
-    div:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.25vh;
+    gap: 2vw;
+
+    color: white;
+  }
+
+  div:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 20px;
+  }
 </style>
