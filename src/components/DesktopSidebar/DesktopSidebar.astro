@@ -10,7 +10,8 @@ import { Icon } from 'astro-icon';
 
     <div id="link-container-desktop">
         <div class="socials">
-            <Icon name="bi:linkedin" height="100%" width="35%" style="color: #fff" />
+            <Icon name="bi:linkedin" height="100%" width="40%" style="color: #fff" />
+            <p>LINKEDIN</p>
         </div>
         <div class="socials"></div>
         <div class="socials"></div>
@@ -55,16 +56,19 @@ import { Icon } from 'astro-icon';
         /* border: 1px solid red; */
     }
 
-    /*erwkjrjwker*/
-    svg {
-        fill: white;
-    }
-
     .socials {
-        opacity: 0.7;
+        /* opacity: 0.7; */
         background-color: var(--socials-color);
         border: 3px solid var(--socials-color);
         height: 25%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* padding-left: 1vw; */
+        gap: 2vw;
+
+        color: white;
     }
 
     @media screen and (max-width: 1000px){
