@@ -1,0 +1,28 @@
+---
+const { name, text } = Astro.props;
+import { Icon } from 'astro-icon';
+---
+
+
+<div>
+    <Icon name={name} height="100%" width="50px" style="color: #fff" />
+    <p><strong>{text}</strong></p>
+</div>
+
+
+<style>
+    div {
+        opacity: 0.9;
+        background-color: var(--socials-color);
+        border: 3px solid var(--socials-color);
+        height: 25%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .25vh;
+        gap: 2vw;
+
+        color: white;
+    }
+</style>
