@@ -10,13 +10,8 @@ import SocialLink from './SocialLink.astro';
     </div>
 
     <div id="link-container-desktop">
-        <!-- <div class="socials">
-            <Icon name="bi:linkedin" height="100%" width="50px" style="color: #fff" />
-            <p>LINKEDIN</p>
-        </div> -->
         <SocialLink name="bi:linkedin" text="LINKEDIN" />
-        <!-- <div class="socials"></div>
-        <div class="socials"></div> -->
+        <SocialLink name="jam:github" text="GITHUB" />
     </div>
 </aside>
 
@@ -57,21 +52,6 @@ import SocialLink from './SocialLink.astro';
 
         /* border: 1px solid red; */
     }
-
-    /* .socials {
-        opacity: 0.9;
-        background-color: var(--socials-color);
-        border: 3px solid var(--socials-color);
-        height: 25%;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: .25vh;
-        gap: 2vw;
-
-        color: white;
-    } */
 
     @media screen and (max-width: 1000px){
         aside {
