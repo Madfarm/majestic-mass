@@ -6,7 +6,6 @@ export default function ThemeToggle() {
     //For client/server mismatch
     const [isMounted, setIsMounted] = useState(false);
 
-    //Turning Theme into state and toggling it
     const [theme, setTheme] = useState('light');
     const toggleTheme = () => {
         if (theme === 'light') {
